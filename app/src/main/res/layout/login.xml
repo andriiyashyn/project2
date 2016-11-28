@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context="andy.project2.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imgMain"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="@dimen/marginTop"
+        android:src="@drawable/logo"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/imgGuideOnDemand"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/button_margin"
+        android:layout_marginRight="@dimen/button_margin"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgMain"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/guide_on_demand"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+
+    <andy.project2.TextViewPlus
+        android:id="@+id/signInButton"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_above="@+id/signUpButton"
+        android:layout_marginLeft="@dimen/button_margin"
+        android:layout_marginRight="@dimen/button_margin"
+        android:padding="@dimen/button_padding"
+        android:background="@drawable/border_button"
+        android:gravity="center_vertical"
+        android:text="SIGN IN"
+        android:textAlignment="center"
+        android:textColor="@color/borders"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:customFont="fonts/roboto_light.ttf"/>
+
+    <andy.project2.TextViewPlus
+        android:id="@+id/signUpButton"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_above="@+id/textSignWith"
+        android:layout_marginBottom="20dp"
+        android:padding="@dimen/button_padding"
+        android:layout_marginLeft="@dimen/button_margin"
+        android:layout_marginRight="@dimen/button_margin"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border_button"
+        android:gravity="center_vertical"
+        android:text="SIGN UP"
+        android:textAlignment="center"
+        android:textColor="@color/borders"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:customFont="fonts/roboto_light.ttf"/>
+
+
+    <View
+        android:layout_width="@dimen/line_width"
+        android:layout_height="1dp"
+        android:layout_above="@+id/facebookButton"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/marginBottomView"
+        android:layout_marginLeft="@dimen/button_margin"
+        android:layout_marginTop="8dp"
+        android:background="@color/borders" />
+
+    <andy.project2.TextViewPlus
+        android:id="@+id/textSignWith"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/facebookButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="14dp"
+        android:text="Sign in with"
+        android:textAlignment="center"
+        android:textColor="@color/borders"
+        android:textSize="14sp"
+        app:customFont="fonts/roboto_light.ttf"/>
+
+    <View
+        android:layout_width="@dimen/line_width"
+        android:layout_height="1dp"
+        android:layout_above="@+id/facebookButton"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/marginBottomView"
+        android:layout_marginRight="@dimen/button_margin"
+        android:layout_marginTop="8dp"
+        android:background="@color/borders" />
+
+
+    <andy.project2.TextViewPlus
+        android:id="@+id/facebookButton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_above="@+id/txt_info"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/marginGF"
+        android:background="@drawable/border_button"
+        android:gravity="center"
+        android:text="f"
+        android:padding="@dimen/button_padding"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:customFont="fonts/roboto_bold.ttf"/>
+
+    <andy.project2.TextViewPlus
+        android:id="@+id/googleButton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_above="@+id/txt_info"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/marginGF"
+        android:background="@drawable/border_button"
+        android:gravity="center"
+        android:text="G+"
+        android:padding="@dimen/button_padding"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:customFont="fonts/roboto_bold.ttf"/>
+
+
+    <andy.project2.TextViewPlus
+        android:id="@+id/txt_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:text="By creating an account you agree to our \n User Agreement and Privacy Policy"
+        android:textAlignment="center"
+        android:textColor="@color/borders"
+        android:textSize="14sp"
+        app:customFont="fonts/roboto_light.ttf"/>
+
+
+</RelativeLayout>

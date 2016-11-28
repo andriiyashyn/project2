@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_margin">50dp</dimen>
+    <dimen name="line_width">60dp</dimen>
+    <dimen name="button_padding">5dp</dimen>
+    <dimen name="marginBottomView">23dp</dimen>
+    <dimen name="marginGF">120dp</dimen>
+    <dimen name="marginTop">80dp</dimen>
+</resources>
