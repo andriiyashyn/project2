@@ -24,7 +24,7 @@
             android:src="@drawable/contact"
             android:layout_height="60dp"
 
-            android:layout_marginLeft=""
+            android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_centerHorizontal="true" />
 
