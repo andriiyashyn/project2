@@ -10,7 +10,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login);
+        setContentView(R.layout.settings);
 
         Typeface roboto_light = Typeface.createFromAsset(getAssets(),"fonts/roboto_light.ttf");
         Typeface roboto_bold = Typeface.createFromAsset(getAssets(),"fonts/roboto_bold.ttf");

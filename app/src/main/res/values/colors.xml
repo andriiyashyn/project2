@@ -3,9 +3,15 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="colorControlActivated">#ff9730</color>
 
     <color name="white">#fff</color>
     <color name="black">#000</color>
 
     <color name="borders">#bae5cb</color>
+
+    <color name="divider">#a1a1a1</color>
+    <color name="recyclerViewBG">#eaecec</color>
+
+    <color name="addLicence">#ff9931</color>
 </resources>

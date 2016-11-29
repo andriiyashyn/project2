@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize">
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageContainer"
+        android:gravity="bottom"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:src="@drawable/contact"
+            android:layout_height="60dp"
+
+            android:layout_marginLeft=""
+            android:layout_marginRight="20dp"
+            android:layout_centerHorizontal="true" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/editContact"
+
+            app:backgroundTint="#ffebb8"
+            android:src="@drawable/new_post"
+            android:layout_alignTop="@+id/imageView"
+            android:layout_alignEnd="@+id/imageView"
+            android:layout_marginEnd="26dp"
+            android:layout_marginTop="37dp" />
+
+
+
+
+    </RelativeLayout>
+
+    <andy.project2.TextViewPlus
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/firstName"
+        android:layout_below="@id/imageContainer"
+
+        android:text="First Name"
+        android:textSize="16sp"
+        android:layout_alignParentStart="true"
+        app:customFont="fonts/roboto_bold.ttf"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <EditText
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+
+        android:inputType="textPersonName"
+        android:hint="First Name"
+        android:padding="1dp"
+        android:layout_below="@+id/firstName"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/editFirstName"
+        android:textSize="14sp"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:layout_below="@id/editFirstName"
+        android:background="@color/divider"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+
+
+    <andy.project2.TextViewPlus
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/lastName"
+        android:layout_below="@id/editFirstName"
+
+        android:text="Last Name"
+        android:textSize="16sp"
+        android:layout_alignParentStart="true"
+        app:customFont="fonts/roboto_bold.ttf"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <EditText
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+
+        android:inputType="textPersonName"
+        android:hint="Last Name"
+        android:padding="1dp"
+        android:layout_below="@id/lastName"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/editLastName"
+        android:textSize="14sp"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:layout_below="@id/editLastName"
+        android:background="@color/divider"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+
+    <andy.project2.TextViewPlus
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/email"
+        android:layout_below="@id/editLastName"
+
+        android:text="E-mail"
+        android:textSize="16sp"
+        android:layout_alignParentStart="true"
+        app:customFont="fonts/roboto_bold.ttf"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <EditText
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+
+        android:inputType="textEmailAddress"
+        android:hint="E-mail"
+        android:padding="1dp"
+        android:layout_below="@id/email"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/editEmail"
+        android:textSize="14sp"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:layout_below="@id/editEmail"
+        android:background="@color/divider"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+
+    <andy.project2.TextViewPlus
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/phoneNumber"
+        android:layout_below="@id/editEmail"
+
+        android:text="Phone Number"
+        android:textSize="16sp"
+        android:layout_alignParentStart="true"
+        app:customFont="fonts/roboto_bold.ttf"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <EditText
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+
+        android:inputType="textPhonetic"
+        android:hint="Phone Number"
+        android:padding="1dp"
+        android:layout_below="@id/phoneNumber"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/editPhoneNumber"
+        android:textSize="14sp"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:layout_below="@id/editPhoneNumber"
+        android:background="@color/divider"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+
+    <andy.project2.TextViewPlus
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/address"
+        android:layout_below="@id/editPhoneNumber"
+
+        android:text="Address"
+        android:textSize="16sp"
+        android:layout_alignParentStart="true"
+        app:customFont="fonts/roboto_bold.ttf"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <EditText
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+
+        android:inputType="textPostalAddress"
+        android:hint="Address"
+        android:padding="1dp"
+        android:layout_below="@id/address"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/editAddress"
+        android:textSize="14sp"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/editAddress"
+        android:background="@color/divider"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+
+    <andy.project2.TextViewPlus
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/professional"
+        android:layout_below="@id/editAddress"
+
+        android:text="Professional"
+        android:textSize="16sp"
+        android:layout_alignParentStart="true"
+        app:customFont="fonts/roboto_bold.ttf"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/professional"
+        android:layout_alignBottom="@+id/professional"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/switch1"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+
+    <andy.project2.TextViewPlus
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/languages"
+        android:layout_below="@id/professional"
+
+        android:text="Languages"
+        android:textSize="16sp"
+        android:layout_alignParentStart="true"
+        app:customFont="fonts/roboto_bold.ttf"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:background="@color/recyclerViewBG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerViewLanguages"
+        android:layout_below="@+id/languages"
+        android:layout_marginTop="10dp"
+        android:scrollbars="vertical"/>
+
+
+    <andy.project2.TextViewPlus
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/id"
+        android:layout_below="@id/recyclerViewLanguages"
+
+        android:text="ID"
+        android:textSize="16sp"
+        android:layout_alignParentStart="true"
+        app:customFont="fonts/roboto_bold.ttf"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <EditText
+        android:layout_marginTop="4dp"
+        android:layout_width="180dp"
+        android:layout_height="18dp"
+
+        android:inputType="textPersonName"
+        android:hint="ID"
+        android:padding="1dp"
+        android:layout_below="@id/id"
+        android:id="@+id/editID"
+        android:textSize="14sp"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignEnd="@+id/view" />
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="1dp"
+
+        android:layout_below="@id/editID"
+        android:background="@color/divider"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/view" />
+
+    <andy.project2.TextViewPlus
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/addLicencePhoto"
+
+        android:textColor="@color/addLicence"
+        android:text="Add licence photo"
+        android:textSize="16sp"
+        app:customFont="fonts/roboto_bold.ttf"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="0dp"
+        android:layout_alignBottom="@+id/floatingActionButton"
+        android:layout_alignEnd="@+id/languages" />
+
+
+    <andy.project2.TextViewPlus
+        android:id="@+id/signInButton"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="@dimen/button_margin"
+        android:layout_marginRight="@dimen/button_margin"
+        android:padding="@dimen/button_padding"
+        android:background="@drawable/border_button_save"
+        android:gravity="center_vertical"
+        android:text="SAVE"
+        android:layout_marginBottom="40dp"
+        android:textAlignment="center"
+        android:textColor="#ffae62"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:customFont="fonts/roboto_light.ttf"
+        android:layout_below="@+id/addLicencePhoto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+
+        app:backgroundTint="#ffebb8"
+        android:src="@drawable/ic_camera_alt_white_24dp"
+        android:id="@+id/floatingActionButton"
+        android:layout_alignTop="@+id/editID"
+        android:layout_toStartOf="@+id/addLicencePhoto" />
+
+
+</RelativeLayout>
+
+</ScrollView>
