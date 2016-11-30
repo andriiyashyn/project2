@@ -14,4 +14,5 @@
     <color name="recyclerViewBG">#eaecec</color>
 
     <color name="addLicence">#ff9931</color>
+    <color name="locationBottomColor">#f3f3f3</color>
 </resources>

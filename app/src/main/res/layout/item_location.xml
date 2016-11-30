@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/kiev1"
+        android:id="@+id/personImage"
+        android:scaleType="centerCrop"/>
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:layout_below="@+id/personImage"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:stepSize="5"
+        style="?attr/ratingBarStyleSmall"
+        android:layout_alignEnd="@+id/personImage"
+        android:numStars="5" />
+
+
+    <andy.project2.TextViewPlus
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anna Smith"
+        android:id="@+id/namePerson"
+        android:textSize="18sp"
+        app:customFont="fonts/roboto_bold.ttf"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/personImage"
+        android:layout_marginStart="16dp" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_map_marker_black_18dp"
+        android:id="@+id/imageView3"
+        android:layout_alignBottom="@+id/ratingBar"
+        android:layout_alignStart="@+id/textPerson" />
+
+    <andy.project2.TextViewPlus
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addressText"
+        android:text="81 Price Motorway 10 m"
+        android:layout_marginLeft="5dp"
+        app:customFont="fonts/roboto_light.ttf"
+        android:layout_alignTop="@+id/ratingBar"
+        android:layout_toEndOf="@+id/imageView3" />
+
+
+    <andy.project2.TextViewPlus
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text=" «Success is one percent inspiration,  ninety-nine percent pers"
+        android:id="@+id/textPerson"
+        android:textSize="14sp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        app:customFont="fonts/roboto_light.ttf"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/namePerson"
+        android:layout_toStartOf="@+id/priceText" />
+
+    <andy.project2.TextViewPlus
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/priceText"
+        android:text="US$5.50"
+        android:layout_marginLeft="5dp"
+        app:customFont="fonts/roboto_bold.ttf"
+        android:layout_centerVertical="true"
+        android:textColor="@color/colorControlActivated"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

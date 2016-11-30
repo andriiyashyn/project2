@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/mapImage"
+        android:layout_height="200dp"
+        android:src="@drawable/kiev1"
+        android:scaleType="centerCrop"/>
+
+    <android.support.v7.widget.SearchView
+        android:layout_marginTop="5dp"
+        android:id="@+id/searchIcon"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/search_bg"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/recyclerViewLocation"
+        android:layout_below="@id/mapImage"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/locationBottomColor"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/contact" />
+
+            <andy.project2.TextViewPlus
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                app:customFont="fonts/roboto_light.ttf"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/tours"/>
+
+            <andy.project2.TextViewPlus
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tours"
+                android:textColor="@color/colorControlActivated"
+                app:customFont="fonts/roboto_light.ttf"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+        <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/map"/>
+
+            <andy.project2.TextViewPlus
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Map"
+                app:customFont="fonts/roboto_light.ttf"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+        <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/filter"/>
+
+            <andy.project2.TextViewPlus
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Filter"
+                app:customFont="fonts/roboto_light.ttf"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -41,8 +41,6 @@
             android:layout_marginTop="37dp" />
 
 
-
-
     </RelativeLayout>
 
     <andy.project2.TextViewPlus
